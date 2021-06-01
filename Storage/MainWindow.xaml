@@ -1,0 +1,43 @@
+﻿<Window Background="#F0F0F0" x:Class="Storage.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Storage"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="555.2" Width="800" HorizontalAlignment="Center" HorizontalContentAlignment="Center" WindowStartupLocation="CenterScreen" WindowStyle="ThreeDBorderWindow">
+
+    <Grid x:Name="MainPanel" Background="Azure">
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition Width="160"/>
+        </Grid.ColumnDefinitions>
+
+        <Menu Height="22" VerticalAlignment="Top" Grid.ColumnSpan="4" Margin="12,0,81,0" HorizontalAlignment="Center" HorizontalContentAlignment="Center" Background="SlateGray" Foreground="White" FontSize="16px" Width="547">
+            <MenuItem Header="Товары" Click="BtnProduct_Click" Width="90"  />
+            <MenuItem Header="Контрагенты" Click="BtnCounteragent_Click" Width="112"/>
+            <MenuItem Header="Товары на складе"  Click="ProductStorage_Click" Width="162"/>
+            <MenuItem Header="Закупки" Click="BtnComing_Click" Width="90" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+            <MenuItem Header="Продажи" Click="BtnPurchase_Click" Width="90"/>
+        </Menu>
+
+
+        <Frame x:Name ="FrameContent" Grid.ColumnSpan="5" Grid.RowSpan="8" Margin="0,43,0,9.6" />
+
+
+    </Grid>
+
+</Window>

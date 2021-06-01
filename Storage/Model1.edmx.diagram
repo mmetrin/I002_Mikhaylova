@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="743222779ca745b0aae4827a489d18ce" Name="Diagram1">
+        <EntityTypeShape EntityType="I002Model.Coming" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="I002Model.Product" Width="1.5" PointX="0.75" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="I002Model.ProductComing" Width="1.5" PointX="3" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="I002Model.ProductOnStorage" Width="1.5" PointX="3" PointY="7.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="I002Model.ProductPurchase" Width="1.5" PointX="6" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="I002Model.Purchase" Width="1.5" PointX="3.75" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="I002Model.sysdiagrams" Width="1.5" PointX="5.75" PointY="1.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="I002Model.Сounteragent" Width="1.5" PointX="1.5" PointY="10.625" IsExpanded="true" />
+        <AssociationConnector Association="I002Model.FK_Coming_Сounteragent" ManuallyRouted="false" />
+        <AssociationConnector Association="I002Model.FK_ProductComing_Coming" ManuallyRouted="false" />
+        <AssociationConnector Association="I002Model.FK_ProductComing_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="I002Model.FK_ProductOnStorage_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="I002Model.FK_ProductPurchase_Product" ManuallyRouted="false" />
+        <AssociationConnector Association="I002Model.FK_ProductPurchase_Purchase" ManuallyRouted="false" />
+        <AssociationConnector Association="I002Model.FK_Purchase_Сounteragent" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

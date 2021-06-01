@@ -1,0 +1,58 @@
+﻿<Window x:Class="Storage.AddCounteragent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Storage"
+        mc:Ignorable="d"
+     Title = "Добавление контерагента" Height = "500" Width = "400" HorizontalContentAlignment = "Center" HorizontalAlignment = "Center" WindowStartupLocation = "CenterScreen" ShowInTaskbar = "False" >
+
+
+
+    <StackPanel  Background="Azure" >
+
+
+        <Label Content = "Добавление контерагента" HorizontalAlignment = "Center"   VerticalAlignment = "Top" FontWeight = "Bold" Margin = "0 10 0 0" />
+
+
+        <Label Content = "Введите  имя " HorizontalAlignment = "Center"   VerticalAlignment = "Top" FontWeight = "normal" Margin = "0 10 0 0" />
+
+
+
+        <TextBox  x:Name = "TxtForName"  Height = "23" VerticalAlignment = "Center"  TextWrapping = "Wrap" Text = "" Width = "300px" />
+
+        <Label Content = "Введите  фамилию " HorizontalAlignment = "Center"   VerticalAlignment = "Top" FontWeight = "normal" Margin = "0 10 0 0" />
+
+
+
+        <TextBox  x:Name = "TxtForSurname"  Height = "23" VerticalAlignment = "Center"  TextWrapping = "Wrap" Text = "" Width = "300px" />
+
+        <Label Content = "Введите  отчество " HorizontalAlignment = "Center"   VerticalAlignment = "Top" FontWeight = "normal" Margin = "0 10 0 0" />
+
+
+
+        <TextBox  x:Name = "TxtForMiddle"  Height = "23" VerticalAlignment = "Center"  TextWrapping = "Wrap" Text = "" Width = "300px" />
+
+        <Label Content = "Введите  ИНН " HorizontalAlignment = "Center"   VerticalAlignment = "Top" FontWeight = "normal" Margin = "0 10 0 0" />
+
+
+
+        <TextBox  x:Name = "TxtForInn"  Height = "23" VerticalAlignment = "Center"  TextWrapping = "Wrap" Text = "" Width = "300px" MaxLength="12" />
+
+        <Label Content = "Введите  Адресс " HorizontalAlignment = "Center"   VerticalAlignment = "Top" FontWeight = "normal" Margin = "0 10 0 0" />
+
+
+
+        <TextBox  x:Name = "TxtForAdress"  Height = "23" VerticalAlignment = "Center"  TextWrapping = "Wrap" Text = "" Width = "300px" />
+
+        <Label Content = "Введите  телеофон " HorizontalAlignment = "Center"   VerticalAlignment = "Top" FontWeight = "normal" Margin = "0 10 0 0" />
+
+
+
+        <TextBox  x:Name = "TxtForPhone"  Height = "23" VerticalAlignment = "Center"  TextWrapping = "Wrap" Text = "" Width = "300px" MaxLength="11" />
+
+
+        <Button x:Name = "BtnAddCounteragent" Content = "Добавить" Margin = "48,10,45.6,0" Width="300" Background="SlateGray" Foreground="White" Height = "27" Click="BtnAddCounteragent_Click" />
+
+    </StackPanel>
+</Window>

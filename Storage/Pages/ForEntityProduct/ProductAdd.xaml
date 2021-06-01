@@ -1,0 +1,28 @@
+﻿<Window x:Class="Storage.ProductAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Storage"
+        mc:Ignorable="d"
+       Title = "Редактирование продукта"  Background="Azure" Height = "200" Width = "400" HorizontalContentAlignment = "Center" HorizontalAlignment = "Center" WindowStartupLocation = "CenterScreen" ShowInTaskbar = "False" >
+
+
+
+    <StackPanel >
+
+
+        <Label Content = "Добавление продукта" HorizontalAlignment = "Center"   VerticalAlignment = "Top" FontWeight = "Bold" Margin = "0 10 0 0" />
+
+
+        <Label Content = "Введите  название продукта" HorizontalAlignment = "Center"   VerticalAlignment = "Top" FontWeight = "normal" Margin = "0 10 0 0" />
+
+
+
+        <TextBox  x:Name = "TxtForProduct"  Height = "23" VerticalAlignment = "Center"  TextWrapping = "Wrap" Text = "" Width = "300px" />
+
+
+        <Button  Margin = "10,20,10,10.6" Width="300" Background="SlateGray" Foreground="White" x:Name = "BtnAddProduct" Content = "Добавить" Height = "27" Click="BtnAddProduct_Click" />
+
+    </StackPanel>
+</Window>

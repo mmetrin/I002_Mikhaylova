@@ -1,0 +1,43 @@
+﻿<Window x:Class="Storage.WindowChoiseCounteragent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Storage"
+        mc:Ignorable="d"
+        Title="WindowChoiseCounteragent" Height="450" Width="800"  Background="Azure" HorizontalContentAlignment = "Center" HorizontalAlignment = "Center" WindowStartupLocation = "CenterScreen" ShowInTaskbar = "False">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+        <ListView HorizontalAlignment="Center"  x:Name="TableCounteragents"    Margin="0 50 0 0 "  Grid.Column="0" Grid.Row="0" Grid.ColumnSpan="3" Height="300px" Width="700px" Grid.RowSpan="2">
+            <ListView.View >
+                <GridView  >
+                    <GridViewColumn   Header="Фамилия" DisplayMemberBinding="{Binding Path=Surname}" />
+                    <GridViewColumn   Header="Имя" DisplayMemberBinding="{Binding Path=Name}" />
+                    <GridViewColumn   Header="Отчество" DisplayMemberBinding="{Binding Path=MiddleName}" />
+                    <GridViewColumn   Header="ИНН" DisplayMemberBinding="{Binding Path=INN}" />
+                    <GridViewColumn   Header="Адресс" DisplayMemberBinding="{Binding Path=Adress}" />
+                    <GridViewColumn  Header="Телефон" DisplayMemberBinding="{Binding Path=Phone}" />
+                    <GridViewColumn >
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Button x:Name="ChoiseCountreagentBtn" Content="Выбрать" Click="ChoiseCountreagentBtn_Click"></Button>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                  
+                </GridView>
+            </ListView.View>
+
+        </ListView>
+        <Label Content="Выберите контерагента" HorizontalContentAlignment="Center"  FontWeight="Bold" FontSize="19"  HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" Grid.ColumnSpan="3" Width="373"/>
+    </Grid>
+</Window>

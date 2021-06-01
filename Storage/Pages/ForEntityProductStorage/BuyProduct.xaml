@@ -1,0 +1,34 @@
+﻿<Window x:Class="Storage.BuyProduct"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Storage"
+        mc:Ignorable="d"
+        Title="BuyProduct" Height="625" Width="1099"  Background="Azure" HorizontalContentAlignment = "Center" HorizontalAlignment = "Center" WindowStartupLocation = "CenterScreen" ShowInTaskbar = "False">
+    <StackPanel>
+        <Label Content = "Выберите контрагента, у которого хотите закупить товар" HorizontalAlignment = "Center"   VerticalAlignment = "Top" FontWeight = "Bold" Margin = "280,10,239.8,0" FontSize="20" Width="573" />
+        <StackPanel Orientation="Horizontal">
+            <TextBox Height="40" TextWrapping="Wrap" Text="" Width="700" Margin="170,0,20,0" FontSize="18" x:Name="TxtCounteeragent"/>
+            <Button Content="..." Width="60px" Height="40px" FontSize="22" VerticalContentAlignment="Center" x:Name="ChoiseCounteragent" Click="ChoiseCounteragent_Click" />
+        </StackPanel>
+        <StackPanel Orientation="Horizontal" Margin="0 30 0 0 ">
+            <Button Background="Transparent" Content="Добавить товар" Width="200px" Height="50px" FontSize="22" VerticalContentAlignment="Center"  HorizontalAlignment="Left" Margin="40 0 0 0 " x:Name="AddProduct" Click="AddProduct_Click"/>
+            <Button Background="Transparent" Content="Удалить товар" Width="200px" Height="50px" FontSize="22" VerticalContentAlignment="Center"  HorizontalAlignment="Left" Margin="615 0 0 0 " x:Name="DeleteProduct" Click="DeleteProduct_Click_1" />
+
+        </StackPanel>
+        <ListView HorizontalAlignment="Center"  x:Name="TableProductOnStorage"    Margin="0 10 0 0 "  Width="1015px" Height="300px" FontSize="22" >
+            <ListView.View >
+                <GridView  >
+                    <GridViewColumn  Header="ID" DisplayMemberBinding="{Binding Path=Id}" />
+                    <GridViewColumn  Header="Наименование" DisplayMemberBinding="{Binding Path=Name}" />
+                    <GridViewColumn   Header="Количество" DisplayMemberBinding="{Binding Path=Quantity}" />
+                    <GridViewColumn   Header="Цена (руб.партия)" DisplayMemberBinding="{Binding Path=Price}" />
+                </GridView>
+            </ListView.View>
+        </ListView>
+
+        <Button  Margin = "10,20,10,10.6" Width="300" Background="SlateGray" Foreground="White" Content="Закупить товар"  Height="50px" FontSize="22" VerticalContentAlignment="Center" x:Name="BtnBuyProduct" HorizontalAlignment="Center" Click="BtnBuyProduct_Click"/>
+
+    </StackPanel>
+</Window>
